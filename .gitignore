@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Plasmo & Build outputs
+.plasmo/
+build/
+
+# Local env files
+.env*.local
+
+# Editor directories
+.vscode/

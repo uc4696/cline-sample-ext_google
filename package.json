@@ -1,0 +1,50 @@
+{
+  "name": "window-resizer-screenshot-ext",
+  "displayName": "Resizer & Screenshot",
+  "version": "1.0.0",
+  "allowScripts": {
+    "lmdb@2.7.11": true,
+    "lmdb@2.8.5": true,
+    "lmdb@2.5.2": true,
+    "@swc/core": true,
+    "esbuild": true,
+    "msgpackr-extract": true,
+    "sharp@0.32.6": true,
+    "@parcel/watcher": true
+  },
+  "description": "Chrome Extension for Window resizing and taking screenshots.",
+  "author": "Cline",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@plasmohq/storage": "^1.15.0",
+    "plasmo": "^0.90.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "typescript": "^5.5.3"
+  },
+  "manifest": {
+    "permissions": [
+      "tabs",
+      "activeTab",
+      "storage",
+      "downloads",
+      "scripting",
+      "system.display",
+      "debugger"
+    ],
+    "host_permissions": [
+      "*://*/*"
+    ]
+  }
+}
